@@ -1,0 +1,61 @@
+body {
+  background: linear-gradient(#99667e, #0e79b2);
+  font-family: consolas;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: block;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  cursor: pointer;
+  background: url(./img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg) no-repeat center
+    center/cover;
+  transition: all 0.4s;
+  background-size: 240%;
+  border-radius: 50%;
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+}
+
+.box:hover {
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  background-size: 160%;
+  transition: all 0.3s;
+}
+
+.box:hover .text {
+  transform: rotate(-45deg) translate(0px) rotate(-315deg);
+  background: rgba(51, 95, 153, 0.5);
+  width: 100%;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  line-height: 20rem;
+  height: 100%;
+  margin-top: -10rem;
+  margin-left: -10rem;
+  transition: all 0.5s, letter-spacing 2.5s ease-in-out;
+}
+
+.box .text {
+  display: block;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem;
+  left: 50%;
+  top: 50%;
+  margin-top: -5rem;
+  margin-left: -5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background: #2a9d8f;
+  transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+  transition: all 0.5s;
+}
